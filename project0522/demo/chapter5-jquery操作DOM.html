@@ -1,0 +1,71 @@
+<!DOCYTPE html>
+<html>
+    <head>
+        <title>jquery操作DOM</title>
+        <style type="text/css">
+        .box{width:50px; height:50px; background:red;}
+        </style>
+    </head>
+    <body>
+        <!-- <div id="box">
+            <input id='content' type="text" />
+            <button id="add">添加</button>
+            <button id="delete">删除</button>
+            <ul id="list">
+                <li>吃饭</li>
+                <li>睡觉</li>
+                <li>打豆豆</li>
+            </ul>
+        </div> -->
+        <div id="box" class="box"></div>
+        <button id="bigger">放大</button>
+        <button id="small">缩小</button>
+        <button id="show">显示</button>
+        <button id="hide">隐藏</button>
+        <script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+        <script type="text/javascript">
+        /*增加*/
+        // append
+        // prepend
+        // after
+        // before
+        /*var add = $('#add');
+
+        add.click(function(){
+            var thing = $('#content').val();
+            var li = $('<li></li>');
+
+            li.html(thing);
+            $('#list').prepend(li);
+        })*/
+
+        /*删除*/
+        // remove()
+        // empty()
+        // var del = $('#delete');
+        // del.click(function(){
+        //     $('#list li').eq(0).remove();
+        // })
+
+        /*修改*/
+        // 通过css()方法修改
+        $('#bigger').click(function(){
+            $('#box').animate({'width': '100px', 'height': '100px'});
+        })
+
+        $('#small').click(function(){
+            $('#box').animate({'width': '10px', 'height': '10px'});
+        })
+
+        $('#show').click(function(){
+            $('#box').fadeIn();
+        })
+
+        $('#hide').click(function(){
+            $('#box').fadeOut();
+        })
+
+
+        </script>
+    </body>
+</html>

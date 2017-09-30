@@ -1,0 +1,107 @@
+<!DOCYTPE html>
+<html>
+    <head>
+        <title>Element</title>
+        <style type="text/css">
+        /*reset css*/
+        html, body, ul, li, dl, dt, dd{margin:0; padding:0; font:14px/28px normal "微软雅黑";}
+        li{list-style:none;}
+
+        #box{position:relative; width:600px; height:600px; margin:50px auto; padding:0 30px; border:1px solid #999;}
+        h4{border-bottom:2px solid #C71212;}
+        #result li{display: none;}
+        </style>
+    </head>
+    <body>
+        <div id="box"><!-- box用于将整体内容框在一起，并居中 -->
+            <!-- 输入部分 -->
+            <h4>输入：</h4>
+            第一个数：<input id="num_01" type="text" value="10" />
+            第二个数：<input id="num_02"  type="text" value="20" />
+            <!-- 执行操作 -->
+            <h4>执行计算：</h4>
+            <div class="options">
+                <button id="add">+</button>
+                <button id="reduce">-</button>
+                <button id="multiply">x</button>
+                <button id="divide">÷</button>
+            </div>
+            <!-- 输出部分 -->
+            <h4>输出：</h4>
+            <ul id="result">
+            </ul>
+        </div>
+        <script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+        <script type="text/javascript">
+        window.onload = function(){
+            /*将所有的代码写在window.onload里，保证页面已经加载完成，可以获取到DOM*/
+
+            /*写程度第一步，把需要的DOM获取到*/
+            var input_01 = document.getElementById('num_01');
+            var input_02 = document.getElementById('num_02');
+            var add = document.getElementById('add');
+            var reduce = document.getElementById('reduce');
+            var multiply = document.getElementById('multiply');
+            var divide = document.getElementById('divide');
+            var result = document.getElementById('result');
+            var number1;
+            var number2;
+
+            /*第二步，给DOM绑定事件*/
+            add.onclick = function(){
+                getNumber();
+                var sum = number1 + number2;
+
+                /*var li = document.createElement('li');
+                li.innerHTML = number1 + '+' + number2 + '=' + sum;
+                result.appendChild(li);*/
+                var li = $('<li></li>');
+                li.html(number1 + '+' + number2 + '=' + sum);
+                $('#result').append(li);
+                li.fadeIn();
+            };
+
+            reduce.onclick = function(){
+                getNumber();
+                var sum = number1 - number2;
+
+                var li = document.createElement('li');
+                li.innerHTML = number1 + '-' + number2 + '=' + sum;
+                result.appendChild(li);
+            };
+
+            multiply.onclick = function(){
+                getNumber();
+                var sum = number1 * number2;
+
+                var li = document.createElement('li');
+                li.innerHTML = number1 + 'x' + number2 + '=' + sum;
+                result.appendChild(li);
+            };
+
+            /*除法，这里只演示最简单的，这里需要考虑第二个数不能为0的情况*/
+            divide.onclick = function(){
+                getNumber();
+
+                if (number2 == 0) {
+                    alert('除数不能为0！');
+                    return;
+                }
+
+                var sum = number1 / number2;
+
+                var li = document.createElement('li');
+                li.innerHTML = number1 + '÷' + number2 + '=' + sum;
+                result.appendChild(li);
+            };
+
+            /*思考：上面很多代码是重复的，Don't Repeat Yourself，可否将重复的提取出来*/
+            function getNumber(){
+                number1 = parseInt(input_01.value);
+                number2 = parseInt(input_02.value);    
+            }
+
+        }
+        </script>
+    </body>
+</html>

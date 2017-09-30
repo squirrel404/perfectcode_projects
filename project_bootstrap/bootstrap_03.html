@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=divce-width,initial-scale=1">
+	<title>bootstrap全局css样式</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<style type="text/css">
+		.row{margin-bottom: 20px;}
+	.row .row{margin-top:10px;margin-bottom: 0;}
+	[class*="col-"]{
+		padding-top:15px;padding-bottom:15px;background-color:rgba(86,61,124,.15);
+		border:1px solid rgba(86,61,124,.2);
+	}
+	</style>
+
+</head>
+<body>
+	<div class="container">固定宽度容器</div>
+	<div class="container-fluid">100%宽度</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">.col-md-1</div>
+			<div class="col-md-4">.col-md-1</div>
+			<div class="col-md-4">.col-md-1</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8">.col-md-1</div>
+			<div class="col-md-4">.col-md-1</div>
+		</div>
+		<div class="row">
+			<div class="col-md-9">.col-md-1</div>
+			<div class="col-md-4">.col-md-1</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1</div>
+			<div class="col-md-5">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+		</div>
+
+		<p>移动设备，平板，手机</p>
+		<div class="row">
+			<div class="col-xs-6 col-ms-6 col-md-1">.col-md-1</div>
+			<div class="col-xs-6 col-ms-6 col-md-1">.col-md-1</div>
+		</div>
+		<p>偏移量使用</p>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">.col-md-1</div>
+		</div>
+		<p>嵌套使用</p>
+		<div class="row">
+			<div class="col-md-6">
+			col-md-6
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">.col-md-8</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-push-4">col-md-8</div>
+			<div class="col-md-4 col-md-pull-8">col-md-4</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="jquery/jquery.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

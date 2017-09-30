@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js07</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<style type="text/css">
+		.top{padding-top: 100px;}
+	</style>
+</head>
+<body>
+<div class="container top">
+	<a type="button" class="btn btn-default"  data-toggle="popover" data-trigger="focus" data-placement="left" data-content="left"  role="button" tabindex="0">左侧</a>
+	<a type="button" class="btn btn-default"  data-toggle="popover" data-trigger="focus" data-placement="top" data-content="top"  role="button" tabindex="0">上侧</a>
+	<a type="button" class="btn btn-default"  data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="bottom"  role="button" tabindex="0">下侧</a>
+	<a type="button" class="btn btn-default"  data-toggle="popover" data-trigger="focus" data-placement="right" data-content="right"  role="button" tabindex="0">右侧</a>
+</div>
+<script src="jquery/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>	
+<script >
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</script>
+</body>
+</html>

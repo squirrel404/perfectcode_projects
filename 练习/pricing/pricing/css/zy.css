@@ -1,0 +1,300 @@
+body{
+	background-color: #e6ebea;
+}
+header{
+	height:76px;
+	width:1760px;
+	margin-top:20px;
+	background-color:#009966;
+	margin: 20px 20px auto 20px;
+	border-radius: 5px;
+	position: relative;
+}
+i{
+	display: block;
+}
+.top-logo{
+	width:130px;
+	height:32px;
+	background-image: url(../img/top_logo.png);
+	position: absolute;
+	top:20px;
+	left:20px;
+}
+a{
+	text-decoration: none;
+}
+.header-nav ul{
+	position: absolute;
+	top:16px;
+	left:602px;
+
+}
+li{
+	display: inline;
+	list-style: none;
+	font-family: "黑体";
+	font-size: 16px;
+	margin-right: 60px;
+}
+header a{
+	color:#ffffff;
+}
+.header-botton{
+	width:96px;
+	height:36px;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-family: "黑体";
+	font-size:16px;
+}
+.mf{
+	background-color: #ffbe4e;
+	margin-right: 10px;
+}
+.mf a{
+	color:#333;
+}
+.ht{
+	background-color:#117e61;
+	color:#fff;
+}
+.header-ctrl{
+	position: absolute;
+	right:30px;
+	bottom: 27px;
+}
+main{
+	position: relative;
+	width:1220px;
+	margin: 30px auto auto 290px;
+	background-color: #ffffff;
+	padding-top: 80px;
+	padding-bottom: 78px;
+	height: auto;
+}
+.main-head{
+	text-align: center;
+	font-family: "黑体";
+}
+.main-head h1{
+	color:#33333;
+	font-size: 35px;
+}
+.main-head h3{
+	font-size: 23px;
+	color:#999999;
+}
+.botton{
+	font-size: 20px;
+	background-color:#15a07b;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 5px;
+}
+.main-head-botton{
+	width:220px;
+	margin:34px auto 70px auto;
+
+}
+.main-head-botton a{
+	color:#ffffff;
+}
+hr{
+	margin-left: 40px;
+	margin-right: 40px;
+	color: #e6ebea;
+}
+.content{
+	text-align: center;
+	padding-top:90px;
+	font-family: "黑体";
+}
+.content h1{
+	font-size: 35px;
+	color:#333333;
+}
+.content h3{
+	color:#c2c2c2;
+	font-size: 22px;
+}
+section{
+	height: auto;
+	width:200px;
+	margin-bottom: 60px;
+	padding-top:5px;
+	padding-bottom: 5px;
+	float: left;
+	margin-right: 153px;
+	font-family: "黑体";
+
+}
+.section-text1{
+	font-size: 17px;
+	color:#33333;
+}
+.section-text2{
+	line-height: 13px;
+	font-size: 13px;
+	color:#999999;
+}
+.icon{
+	padding-left:66px;
+	background: no-repeat;
+	background-position: 0 -5px;
+}
+.icon1{
+	background-image: url(../img/icon1.png);
+}
+.icon2{
+	background-image: url(../img/icon2.png);
+}
+.icon3{
+	background-image: url(../img/icon3.png);
+}
+.icon4{
+	background-image: url(../img/icon4.png);
+}
+.icon5{
+	background-image: url(../img/icon5.png);
+}
+.icon6{
+	background-image: url(../img/icon6.png);
+}
+.icon7{
+	background-image: url(../img/icon7.png);
+}
+.main-body{
+	margin-left:256px;
+	margin-top: 80px;
+}
+.main-body-foot{
+	clear:both;
+	text-align: center;
+	font-family: "黑体";
+}
+.main-body-foot-text1{
+	
+	font-size:15px;
+	
+}
+.main-body-foot-text1 a{
+	color:#15a07b;
+}
+.main-body-foot-botton{
+	width:220px;
+	margin:20px auto 70px auto;
+}
+.botton a{
+	color:#ffffff;
+}
+.main-foot{
+	text-align: center;
+	font-family: "黑体";
+}
+.main-foot h1{
+	font-size:34px;
+	color:#4e4e4e;
+}
+.main-foot h2{
+	font-size: 21px;
+	color: #999999;
+}
+.main-foot-botton{
+	font-size: 24px;
+	height:24px;
+	width:185px;
+	padding-left: 40px;
+	background-image:url(../img/goutong.png);
+	background-repeat:no-repeat;
+	margin:24px auto auto auto;
+}
+.main-foot a{
+	color: #15a07b;
+}
+.zhuce{
+	margin:20px auto 40px 290px;
+	width: 1220px;
+	background-color:#ffffff;
+	font-family: "黑体";
+	text-align: center;
+	padding-top: 40px;
+	height:205px;
+	padding-bottom: 40px;
+	}
+.search{
+	position: relative;
+	height:60px;
+	width:370px;
+	border:2px solid #c8d4d2;
+	border-radius: 5px;
+	overflow: hidden;
+	padding-left: 60px;
+
+}
+
+.youxiang,.password{
+	height:64px;
+	width:333px;
+	border:0;
+	font-size:18px;
+}
+.img{
+	position: absolute;
+	left: 17px;
+	top: 20px;
+}
+.search1{
+	float: left;
+	margin-left:80px;
+}
+.search2{
+	float:left;
+	margin-left: 10px;
+}
+.zhuce-botton{
+	width:180px;
+	float:left;
+	margin-left:10px;
+}
+.zhuce h1{
+	color:#555555;
+	font-size:34px;
+}
+.footer-nav{
+	float: left;
+	margin-left: 290px;
+}
+.footer-nav p{
+	color:#555555;
+	font-family:"黑体";
+}
+.footer-nav li{
+	margin:0;
+}
+.footer-nav a{
+	color:#11a07b;
+}
+.footer-nav ul{
+	padding:0;
+}
+.buttom{
+	width:94px;
+	height:34px;
+	padding-left: 45px;
+}
+.footer-buttom1{
+	float: right;
+	background-image:url(../img/footer_2.png);
+	background-repeat: no-repeat;
+	margin-right: -210px;
+}
+.footer-buttom2{
+	float: right;
+	background-image:url(../img/footer_gxb.png);
+	background-repeat: no-repeat;
+	margin-right: 34px;
+}
+.footer-buttom{
+	color:#555555;
+}

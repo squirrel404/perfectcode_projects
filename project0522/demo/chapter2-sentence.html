@@ -1,0 +1,95 @@
+<!DOCYTPE html>
+<html>
+    <head>
+        <title>语句</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        /**
+         * if……else……
+         * 如果……否则
+         * if(条件){
+         *    满足条件就执行这里的命令
+         * }else{
+         *    不满足条件就执行这里的命令
+         * }
+         **/
+        // 例1：公交车超速提醒
+        // var speed = 90;
+        // if(speed > 80){
+        //     alert('您已超速，请减速慢行！');
+        // }
+
+        // 例2：天太热了，就适合吃冰棋凌，否则，就适合吃火锅
+        // var wendu = 11;
+        // console.log(wendu);
+        // if(wendu > 37){
+        //     alert('今天适合吃冰棋凌！');
+        // }else{
+        //     alert('今天适合吃火锅');
+        // }
+
+        // 例3：
+        // if(wendu < 10){
+        //     alert('今天适合吃火锅！');
+        // }else if(wendu < 20){
+        //     alert('今天适合吃饭！');
+        // }else if(wendu < 30){
+        //     alert('今天适合吃饭！');
+        // }else if(wendu < 40){
+        //     alert('今天适合吃饭！');
+        // }else{
+        //     alert('今天适合吃冰棋凌！');
+        // }
+
+        // 例4：
+        // var score = 90;
+        // if(score > 90){
+        //     alert('学霸，请收下我的膝盖！'); 
+        // }else if(score > 80){
+        //     alert('！'); 
+        // }else if(score > 60){
+        //     alert('多一分浪费，60分万岁！'); 
+        // }else{
+        //     alert('革命尚未成功，同志仍须努力！');     
+        // }
+
+        /**
+         * switch (变量){
+         *     case 情况1: 
+         *     case 情况2:
+         *     ……
+         *     case 情况n:
+         *     default: 
+         * }
+         **/
+        // switch (score){
+        //     case 
+        // }
+
+        // var a = wendu / 10;
+        // switch (a){
+        //     case 1: alert('今天适合吃火锅！'); break;
+        //     case 2: alert('今天适合吃饭！');  break;
+        //     case 3: alert('今天适合喝粥！');  break;
+        //     case 4: alert('今天适合冰棋凌！');  break;
+        //     default: alert('哦哦，今天我也不知道吃什么，随便你吃什么吧'); // 默认情况，容灾情况
+        // }
+
+        /*for语句*/
+        var i;
+        var j;
+
+        for(j=1; j<=10; j++){
+            var box = 0;
+            for(i=1; i<101; i++){
+                box = box + i;
+            }
+            console.log(box); 
+        }
+        
+
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,164 @@
+<html lang="zh-CN" xml:lang="zh-CN">
+<head> 
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
+<meta charset="UTF-8" /> 
+<title>小米官网——demo1</title> 
+<meta name="description" content="小米官方网站包含小米手机系列小米NOTE、小米4，红米手机系列红米Note、红米2/2A还有小米电视40/49/55英寸、手环、移动电源、运动相机,小米智能家居系列路由器、空气净化器、体重秤、插线板等小米商城均有售。" /> 
+<meta name="keywords" content="小米,小米手机,小米官网,红米手机,小米商城,小米电视" /> 
+<meta name="viewport" content="width=1226" /> 
+<link rel="shortcut icon" href="http://s01.mifile.cn/favicon.ico" type="image/x-icon" /> 
+<link rel="icon" href="http://s01.mifile.cn/favicon.ico" type="image/x-icon" /> 
+<link rel="stylesheet" href="http://s01.mifile.cn/css/index.min.css?8e8180" /> 
+<link rel="stylesheet" href="http://s01.mifile.cn/css/base.min.css?v2016d15" /> 
+<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+</head> 
+<body> 
+<div class="home-hero-container container"> 
+<div class="home-hero"> 
+
+
+
+
+<!-- 轮播开始 -->
+<div id="mainContainer" class="home-hero-slider"> 
+ <div class="ui-wrapper" style="max-width: 100%;">
+  <div class="ui-viewport" style="width: 100%; overflow: hidden; position: relative; height: 460px;">
+   <div class="xm-slider" data-stat-title="焦点图轮播" style="width: auto; position: relative;"> 
+    <div class="slide loaded" style="float: none; list-style: none; position: absolute; width: 1226px; z-index: 50; display: block;"> 
+     <a href="//www.mi.com/mi5/"><img src="http://i3.mifile.cn/a4/6a880b1c-d99e-49e2-b16d-a8a91be467d0"/></a> 
+    </div> 
+    <div class="slide loaded" style="float: none; list-style: none; position: absolute; width: 1226px; z-index: 0; display: none;"> 
+     <a href="//item.mi.com/buyphone/note3"><img src="http://i3.mifile.cn/a4/351823d8-d999-4c3f-97c9-1050417fe60d"/></a> 
+    </div> 
+    <div class="slide loaded" style="float: none; list-style: none; position: absolute; width: 1226px; z-index: 0; display: none;"> 
+     <a href="http://hd.mi.com/y/05241o/index.html"><img src="http://i3.mifile.cn/a4/ad55a072-e11e-4b98-ba1a-e36d6e9f722d" /></a> 
+    </div> 
+    <div class="slide loaded" style="float: none; list-style: none; position: absolute; width: 1226px; z-index: 0; display: none;"> 
+     <a href="//item.mi.com/static/buymitv"><img src="http://i3.mifile.cn/a4/74f76f36-066c-4e48-8ef6-5e2687386fe0" /></a> 
+    </div> 
+    <div class="slide loaded" style="float: none; list-style: none; position: absolute; width: 1226px; z-index: 0; display: none;"> 
+     <a href="//item.mi.com/static/buydianfanbao" target="_blank"><img src="http://i3.mifile.cn/a4/3cc1f829-acc0-422b-9711-6692b441c4ca" /></a> 
+    </div> 
+   </div>
+  </div>
+
+
+  <!--右下角的5个小圆点开始-->
+  <div class="ui-controls ui-has-pager ui-has-controls-direction">
+   <div class="ui-pager ui-default-pager">
+    <div class="ui-pager-item" data-slide-index="0">
+     <a href="javascript:void(0);" onclick="return false;" class="ui-pager-link active">1</a>
+    </div>
+    <div class="ui-pager-item" data-slide-index="1">
+     <a href="javascript:void(0);" onclick="return false;" class="ui-pager-link">2</a>
+    </div>
+    <div class="ui-pager-item" data-slide-index="2">
+     <a href="javascript:void(0);" onclick="return false;" class="ui-pager-link">3</a>
+    </div>
+    <div class="ui-pager-item" data-slide-index="3">
+     <a href="javascript:void(0);" onclick="return false;" class="ui-pager-link">4</a>
+    </div>
+    <div class="ui-pager-item" data-slide-index="4">
+     <a href="javascript:void(0);" onclick="return false;" class="ui-pager-link">5</a>
+    </div>
+   </div>
+   <!--右下角的5个小圆点结束-->
+
+
+   <!--向左向右箭头-->
+   <div class="ui-controls-direction">
+    <a class="ui-prev" href="javascript:void(0);" onclick="return false;" >上一张</a>
+    <a class="ui-next" href="javascript:void(0);" onclick="return false;">下一张</a>
+   </div>
+   <!--向左向右箭头-->
+
+  </div>
+ </div> 
+</div>
+<!-- 轮播结束 -->
+
+
+
+
+
+
+</div> 
+</div>
+<script type="text/javascript">
+
+  //jQuery API 文档地址 https://api.jquery.com/
+
+  var currentIndex = 0;
+
+  //切换图片
+  function switchImg(){
+      animateFlag = true;
+      $('.xm-slider>.slide').hide()//隐藏所有图片
+          .eq(currentIndex).fadeIn(1000,function(){
+            animateFlag = false;
+          });//找到要展示的图片并展示
+      $('.ui-pager-link').removeClass('active')//把所有小圆点都变黑色
+          .eq(currentIndex).addClass('active');//找到被点的小圆点,变成白色
+  }
+
+  var intervalId;
+  function setAutoRun(){
+    clearInterval(intervalId);
+    intervalId = setInterval(function(){//每隔5秒切换一下展示的物品
+      if(!animateFlag){
+        currentIndex = ++currentIndex % 5;
+        switchImg();
+      }
+    },5000);
+  }
+  function clearAutoRun(){
+    clearInterval(intervalId);
+    intervalId = null;
+  }
+
+  function init(){
+
+      $(document.body).click(function(evt){
+          var target = evt.target;//找到被点的节点
+
+          var dot = $(target).closest('.ui-pager-item');//如果有这个类,说明是切换图片的小圆点
+          if(dot.length){
+              currentIndex = dot.attr('data-slide-index');
+              switchImg(); 
+              return;
+          }
+
+
+          if($(target).hasClass('ui-prev')){//点击上一张
+              if(currentIndex==0){
+                  currentIndex = 4;
+              }else{
+                  --currentIndex;
+              }
+              switchImg(); 
+              return;
+          }
+
+          if($(target).hasClass('ui-next')){//点击下一张
+              if(currentIndex==4){
+                  currentIndex = 0;
+              }else{
+                  ++currentIndex;
+              }
+              switchImg();
+              return;
+          }
+      });
+
+      $('#mainContainer').mouseover(function(){
+        clearAutoRun();
+      }).mouseout(function(){
+        setAutoRun();
+      });
+  }
+
+  init();
+
+</script> 
+</body>
+</html>

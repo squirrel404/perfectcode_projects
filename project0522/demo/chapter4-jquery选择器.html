@@ -1,0 +1,50 @@
+<!DOCYTPE html>
+<html>
+    <head>
+        <title>jquery选择器</title>
+    </head>
+    <body>
+        <div class="mydiv" id="box">
+            <input id='content' type="text" />
+            <button id="add">添加</button>
+            <button id="delete">删除</button>
+            <ul id="list">
+                <li id="li_01">吃饭</li>
+                <li id="li_02">睡觉</li>
+                <li id="li_03">打豆豆</li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+        <script type="text/javascript">
+        /*选择器*/
+        // 对照API介绍，每个实例一个
+        // 元素选择器
+        // $('.className')、$('#id')、$('tagName')
+        // var box = document.getElementById('box');
+        var lis = $('li');
+        lis.click(function(){
+            alert('add');
+        });
+
+        var li_01 = document.getElementById('li_01');
+        var li_02 = document.getElementById('li_02');
+        var li_03 = document.getElementById('li_03');
+        li_01.onclick = function(){
+
+        }
+        li_02.onclick = function(){
+            
+        }
+        li_03.onclick = function(){
+            
+        }
+        // box.onclick = function(){
+
+        // }
+
+
+        // 属性选择器
+        // $(['attr'])、$(['attr=value'])、$(['attr!=value'])、$(':checked')
+        </script>
+    </body>
+</html>

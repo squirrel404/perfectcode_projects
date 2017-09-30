@@ -1,0 +1,58 @@
+/*reset css*/
+html, body, div, a, ul, li, h3{margin:0; padding:0;}
+a{text-decoration:none;}
+li{list-style:none;}
+body{font:14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;}
+
+
+.container{width:1226px; margin:0 auto;}
+.topBar{width:100%; height:40px; line-height:40px; background:#333; font-size:12px;}
+.topBar a{margin:0 8px; color:#b0b0b0;}
+.topBar a:hover{color:#fff;}
+.topBar .topNav{height:40px; float:left;}
+
+.topBar .manager{height:40px; float: right;}
+
+.part_01{width:100%; height:64px; line-height:64px; padding: 20px 0;}
+.part_01 .logo{float:left;}
+.part_01 .nav{font-size:16px; line-height:}
+.part_01 .nav li{margin:0 10px; float:left; cursor:pointer;}
+.part_01 .nav li:hover{color:#ff6700;}
+
+
+.part_02{position:relative; width:100%; height:460px; margin-bottom:26px; clear:both;}
+.part_02 .opacity_layer{position:absolute; top:0; left:0; width:234px; height:460px; background:rgba(0, 0, 0, 0.7); z-index:3;}
+.part_02 .left{position:absolute; top:0; left:0; width:234px; height:400px; padding:30px 0; z-index:3;}
+.part_02 .left li{width:200px; height:40px; padding-left:34px; line-height:40px; color:#fff; cursor:pointer;}
+.part_02 .left li:hover{background:#ff6700;}
+
+.part_02 .right{position:absolute; top:0; left:0; width:100%; height:460px; z-index:2;}
+.part_02 .right .banner{position:relative; width:100%; height:460px; overflow:hidden;}
+.part_02 .right .banner li{display:none;}
+.part_02 .right .banner li.on{display:block;}
+.part_02 .right .banner img{position:absolute; top:0; left:0; width:100%; height:460px; display:block;}
+
+.part_02 .controller{position:absolute; top:0; right:0; width:992px; height:460px; z-index:4; cursor:pointer;}
+.part_02 .controller .turnPage{position:absolute; top:50%; transform:translateY(-50%); -webkit-transform:translateY(-50%); background:rgba(0, 0, 0, .1); width:42px; height:70px;}
+.part_02 .controller .turnPage:hover{background:rgba(0, 0, 0, .7);}
+.part_02 .controller .turnPage i{width:16px; height:30px; margin:20px auto; display:block;}
+.part_02 .controller .prev{left:0;}
+.part_02 .controller .prev i{background:url(../img/arrow_l.png);}
+.part_02 .controller .next{right:0;}
+.part_02 .controller .next i{background:url(../img/arrow_r.png);}
+.part_02 .controller .dots{position:absolute; bottom:10px; right:50px;}
+.part_02 .controller .dots li{width:6px; height:6px; margin:0 4px; border: 2px solid #fff; border-color: rgba(255,255,255,0.3); border-radius:50%; background:rgba(0, 0, 0, .4); display:block; float:left;}
+.part_02 .controller .dots li.on, .part_02 .controller .dots li:hover{background:rgba(255, 255, 255, .4); border-color:rgba(0, 0, 0, .4);}
+
+.part_03{position:relative; width:100%; clear:both;}
+.part_03 h3{font-size:22px; font-weight:200; line-height:58px; color:#333;}
+.part_03 .controller{position:absolute; top:24px; right:0; width:70px; height:25px;}
+.part_03 .controller .turnPage{width:24px; height:16px; padding:3px 5px; border:1px solid #e0e0e0; font-size: 16px; line-height:16px; cursor:pointer;}
+
+.part_03 .star{position:relative; width:100%; height:340px; overflow:hidden;}
+.part_03 .list{position:absolute; top:0; left:0; width:2480px; height:340px;}
+.part_03 .list li{width:234px; height:300px; margin-right:14px; padding-top:40px; background:#fafafa;  border-top:1px solid red; float:left;}
+.part_03 .list li img{width:160px; height:160px; margin:0 auto 22px; display:block;}
+.part_03 .list li h4{width:100%; text-align:center;}
+.part_03 .list li p{width:100%; text-align:center; font-size:12px; color:#b0b0b0;}
+.part_03 .list li b{width:100%; text-align:center; color:#ff6700; display:block;}

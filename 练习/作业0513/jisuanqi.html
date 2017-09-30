@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jisuanqi</title>
+	<style type="text/css">
+		.button:hover{ 
+			background-color:#d8e8ff;
+			cursor:pointer;
+		} 
+		.jisuanqi{
+			height:400px;width:400px;border:5px solid #555555;border-radius: 5px;margin: 100px auto auto auto;padding: 20px 20px auto 20px;
+		}
+		.screen{height:60px;background-color: blue;
+
+		}
+		.numscreen{
+			width:390px; 
+			height:48px; 
+			line-height:24px; 
+			padding:4px; 
+			border:#e6e6e6 1px solid; 
+			border-bottom:#f2f2f2 1px solid; 
+			border-right:#f2f2f2 1px solid; 
+			margin-right:5px; 
+			direction:ltr; 
+			text-align:right; 
+			font-size:16px; 
+			color:#999; 
+		}
+		.num-buttons{
+			width:210px;border:1px solid #333;height:auto;float:left;
+		}
+		.button{
+				text-align:center;width:60px;height:60px;border-radius: 2px;background-color: red;float:left;margin:5px 5px;
+		}
+		.button0{width:130px;}
+		.m-button{
+			text-align:center;width:70px;height:60px;border-radius: 2px;background-color: green;float:left;margin:5px 5px;
+		}
+		.menue-buttons{width:170px;float:right;border:1px solid #333;}
+		.button-dengyu{width:150px;}
+		
+	</style>
+	<script>
+	//var ascreen=document.getElementById("num_screen").value;
+	var num;
+	var ascreen;
+	var dot;
+	var tittle;
+	//ascreen=String(document.getElementById("num_screen").value);
+	function command(num){
+		document.getElementById("num_screen").value=ascreen=document.getElementById("num_screen").value*10+num;	
+	}
+	ascreen=document.getElementById("num_screen").value;
+	//function point(){
+		document.getElementById("num_screen").value=String()+".";
+	}
+	//document.getElementById("num_screen").value=ascreen;
+	function jia(){tittle=1;ascreen=document.getElementById("num_screen").value;
+	document.getElementById("num_screen").value=0;}
+	function jian(){tittle=2;ascreen=document.getElementById("num_screen").value;
+	document.getElementById("num_screen").value=0;}
+	function chen(){tittle=3;ascreen=document.getElementById("num_screen").value;
+	document.getElementById("num_screen").value=0;}
+	function chu(){tittle=4;ascreen=document.getElementById("num_screen").value;
+	document.getElementById("num_screen").value=0;}
+	switch(tittle){
+		case 1: result=ascreen+document.getElementById("num_screen").value;break;
+		case 2: result=ascreen-document.getElementById("num_screen").value;break;
+		case 3: result=ascreen*document.getElementById("num_screen").value;break;
+		case 4: result=ascreen/document.getElementById("num_screen").value;break;
+		default : break;
+	}
+	function dengyu(){
+		
+	}
+
+
+	</script>
+</head>
+	<div class="jisuanqi">
+		
+			<form name="screen" method="get">
+				<div class="screen">
+				<input type="text" name="numscreen" class="numscreen" id="num_screen" value="0"></input>
+				</div>
+			</form>
+		
+		<div class="num-buttons">
+			
+			<div class="button button9 num-button" onclick="command(9)">
+			<P>9</P>
+			</div>
+			<div class="button button8 num-button" onclick="command(8)">
+			<P>8</P>
+			</div>
+			<div class="button button7 num-button" onclick="command(7)">
+			<P>7</P>
+			</div>
+			<div class="button button6 num-button" onclick="command(6)">
+			<P>6</P>
+			</div>
+			<div class="button button5 num-button" onclick="command(5)">
+			<P>5</P>
+			</div>
+			<div class="button button4 num-button" onclick="command(4)">
+			<P>4</P>
+			</div>
+			<div class="button button3 num-button" onclick="command(3)">
+			<P>3</P>
+			</div>
+			<div class="button button2 num-button" onclick="command(2)">
+			<P>2</P>
+			</div>
+			<div class="button button1 num-button" onclick="command(1)">
+			<P>1</P>
+			</div>
+			<div class="button button0 num-button" onclick="command(0)">
+			<P>0</P>
+			</div>
+			<div class="button buttonpoint num-button" onclick="point()">
+			<P>.</P>
+			</div>
+		</div>
+		<div class="menue-buttons">
+			<div class="m-button button-0ff button">
+				<P>off</P>
+			</div>
+			<div class="m-button button-c button">
+				<P>c</P>
+			</div>
+			<div class="m-button button-jia button">
+				<P>+</P>
+			</div>
+			<div class="m-button button-jian button">
+				<P>-</P>
+			</div>
+			<div class="m-button button-chen button">
+				<P>*</P>
+			</div>
+			<div class="m-button button-chu button">
+				<P>/</P>
+			</div>
+			<div class="m-button button-dengyu button">
+				<P>=</P>
+			</div>
+			
+
+		</div>
+	</div>
+</body>
+</html>

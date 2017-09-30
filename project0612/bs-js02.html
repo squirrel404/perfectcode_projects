@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js_02</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<style type="text/css">
+		#mydiv{
+			width:100px;
+			height:100px;
+			background-color:red;
+			--webkit-transition: width 2s;
+			transition:width 2s;
+		}
+		#mydiv:hover{
+			width:400px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div id="mydiv">
+	</div>
+
+
+<!-- 
+	<script src="jquery/jquery.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script> -->
+	<script>
+	/*	$.support.transition = false;//禁用过渡效果*/
+	
+	document.getElementById("mydiv").addEventListener("transition",function(){
+		this.innerHTMl="过渡事件触发，事件已完成"
+	});
+
+	</script>
+</body>
+</html>

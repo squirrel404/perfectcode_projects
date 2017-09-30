@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>小球移动</title>
+	<meta charset="utf-8"/>
+	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
+</head>
+<style type="text/css">
+	*{padding: 0px ;margin:0px;}
+	#ball{width: 196px ;height: 196px;border-radius: 50%;background-image: url(ball.jpg);position: relative;left: 0px;top:0px;}
+</style>
+<body>
+	<div id="ball"></div>
+	<script type="text/javascript">
+		var oBall=document.getElementById('ball');
+		var iSpeedX=5;
+		var iSpeedY=4;
+		function ball(){
+			iLeft=oBall.offsetLeft+iSpeedX;
+			iTop=oBall.offsetTop+iSpeedY;
+			iMaxWidth=document.documentElement.clientWidth-oBall.offsetWidth;
+			iMaxHeight=document.documentElement.clientHeight-oBall.offsetHeight;
+			if(iLeft>iMaxWidth){	
+				iLeft=iMaxWidth;
+				iSpeedX=-iSpeedX;
+			}
+			if(iLeft<0){	
+				iLeft=0;
+				iSpeedX=-iSpeedX;
+			}
+			if(iTop>iMaxHeight){	
+				iTop=iMaxHeight;
+				iSpeedY=-iSpeedY;
+			}
+			if(iTop<0){	
+				iTop=0;
+				iSpeedY=-iSpeedY;
+			}
+			oBall.style.left=iLeft+'px';
+			oBall.style.top=iTop+'px';
+		}
+		setInterval(ball,30)
+	</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>dom</title>
+	<meta charset="utf-8">
+	<!-- <script>
+	window.onload=function(){//需要加这样一句才能实现，以为加载script时html还没有加载出来
+	var input=document.getElementById("input");
+	var buttton=document.getElementById("button");
+	var ul=document.getElementById("list");
+	button.onclick = function(){
+			var li = document.createElement("li");
+			li.innerHTML = "睡觉";
+			ul.appendChild(li);//插入一个子节点
+	
+	}
+	}
+	</script> -->
+</head>
+<body>
+	<input type="text" id="input" value="" />
+	<button id="button">添加</button>
+	<button id="shanchu">删除</button>
+	<ul id="list">
+		<li>吃饭</li>
+		<!-- <li>睡觉</li>
+		<li>打豆豆</li> -->
+	</ul>
+	<script>
+	var input=document.getElementById("input");
+	var buttton=document.getElementById("button");
+	var ul=document.getElementById("list");
+	//var shanchu = document.getElementById("shanchu");
+	/*给添加按钮绑定添加事件*/
+	button.onclick = function(){
+			var li = document.createElement("li"); //创建li元素
+			var thing = input.value;//获取到input输入的值
+			li.innerHTML = thing;
+			//ul.appendChild(li);  //插入一个子节点,在前面文档的后面
+			ul.insertBefore(li,ul.firstChild); //插入子节点，在文档前面,把li添加到list里面
+			console.log(thing);
+			var del= document.getElementById("shanchu");
+			del.onclick = function(){
+				var li = ul.getElementsByTagName("li")[0];
+				ul.removeChild(li)
+			}
+	}
+
+	</script>
+</body>
+</html>

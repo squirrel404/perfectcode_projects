@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>0529</title>
+	<style type="text/css">
+		*{margin:0;padding:0;}
+		#ball{width:196px;
+			height:196px;
+			background-image:url(ball.jpg);
+			border-radius: 50%;	
+			position: absolute;left:0;top:0;}
+
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+	   	
+		$(document).ready(function(){
+	
+		/*//小球上下弹落
+		var iSpeed=3;
+		var $ball=$("#ball");
+		setInterval(function(){
+			iSpeed=iSpeed+3;
+			$ball.offset().top+iSpeed;
+			var iTop=$ball.offset().top+iSpeed;
+			var iMaxTop=$(window).height()-$ball.width();
+			if(iTop>=iMaxTop){
+				iTop=iMaxTop;
+				iSpeed=-iSpeed*0.85;
+			}
+			$ball.css({top:iTop});
+		},30);*/
+
+
+		//小球移动
+		var $ball=$("#ball");
+		var iSpeedX=5,iSpeedY=4;
+		setInterval(function(){
+			var iMaxWidth=$(window).width()-$ball.width();
+			var iMaxHeight=$(window).height()-$ball.height();
+
+			var iLeft=$ball.offset().left+iSpeedX;
+			var iTop=$ball.offset().top+iSpeedY;
+			$ball.css({
+				left:iLeft,
+				top:iTop,
+			});
+			if(iLeft>=iMaxWidth||iLeft<=0){
+				iSpeedX=iSpeedX*-1;
+			}
+			if(iTop>=iMaxHeight||iTop<=0){
+				iSpeedY=iSpeedY*-1;
+			}
+		},30);
+
+		});
+	</script>
+</head>
+<body>
+	<div id="ball"></div>
+	<!-- <script type="text/javascript">
+	
+	//定时器，每隔1000毫秒执行一次函数
+		/*setInterval(function(){		
+			console.log(new Date());
+		},1000);
+		clearInterval(5000);
+	*/
+	//延时器	2000毫秒后执行函数
+	/*setTimeout(function(){
+		console.log(new Date());
+	},2000);
+	*/
+	</script> -->
+	
+
+	<!--  <script type="text/javascript">
+	//我的代码，小球移动
+			var oBall=document.getElementById("ball");
+			var iSpeedX=5;
+			var iSpeedY=4;
+			var fn=function(){	
+				var iLeft=oBall.offsetLeft+iSpeedX;
+				var iTop=oBall.offsetTop+iSpeedY;
+				var iMaxWidth=document.documentElement.clientWidth-oBall.offsetWidth;
+				var iMaxHeight=document.documentElement.clientHeight-oBall.offsetHeight;
+				oBall.style.left=iLeft+'px';
+				oBall.style.top=iTop+'px';
+				if(iLeft>=iMaxWidth){
+					iSpeedX=iSpeedX*-1;
+				}
+				if(iTop>=iMaxHeight){
+					iSpeedY=iSpeedY*-1;
+				}
+				if(iLeft<=0){
+					iSpeedX=iSpeedX*-1;
+				}
+				if(iTop<=0){
+					iSpeedY=iSpeedY*-1;
+				}
+			}
+			setInterval(fn,30);
+		
+		</script>  -->
+
+	<script type="text/javascript">
+	//鸡哥的代码
+		/*var oBall=document.getElementById('ball');
+		var iSpeedX=5;
+		var iSpeedY=5;
+		function ball(){
+			iLeft=oBall.offsetLeft+iSpeedX;
+			iTop=oBall.offsetTop+iSpeedY;
+			iMaxWidth=document.documentElement.clientWidth-oBall.offsetWidth;
+			iMaxHeight=document.documentElement.clientHeight-oBall.offsetHeight;
+			oBall.style.left=iLeft+'px';
+			oBall.style.top=iTop+'px';
+			if(iLeft>iMaxWidth){	
+				iLeft=iMaxWidth;
+				iSpeedX=-iSpeedX;
+			}
+			if(iLeft<0){	
+				iLeft=0;
+				iSpeedX=-iSpeedX;
+			}
+			if(iTop>iMaxHeight){	
+				iTop=iMaxHeight;
+				iSpeedY=-iSpeedY;
+			}
+			if(iTop<0){	
+				iTop=0;
+				iSpeedY=-iSpeedY;
+			}
+			
+		}
+		setInterval(ball,30);
+*/
+	</script>
+</body>
+</html>

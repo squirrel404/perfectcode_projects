@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>function</title>
+	<style type="text/css">
+		.container{
+			width:450px;
+			margin:50px auto auto auto;
+		}
+		ul{  margin-left: 390px;}
+		.numscreen{
+			width:390px; 
+			height:48px; 
+			padding:4px; 
+			border:#666 2px solid; 
+			text-align:center; 
+			font-size:24px; 
+			color:#999; 
+			margin-top:30px;
+		}
+		.button{
+			height:50px;width:70px;font-size: 24px;
+			margin:30px auto auto 45px;
+		}
+		li{list-style: none;
+			display: none;
+			width:430px;height:60px;margin-bottom:6px;border:2px solid #999;border-radius: 5px;
+			background-color:#09FDFD;color:#888;font-size: 28px;text-align: center; 
+		}	
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+	function jia(n1,n2){
+		var result;
+		result=Number(n1)+Number(n2);
+		return result;
+	}
+	$(document).ready(function(){
+		$(".button1").click(function(){
+		var num1 = document.getElementById("screen1").value;
+		var num2 = $("#screen2").val();
+		var result;
+		result = jia(num1,num2);
+		console.log(result);
+
+		});
+		
+	});
+	</script>
+</head>
+<body>
+	<div class="container">
+	<div class="screen">
+		<input type="text" name="numscreen" class="numscreen" id="screen1" value="1"></input>
+	</div>
+	<div class="screen">
+		<input type="text" name="numscreen" class="numscreen" id="screen2" value="10"></input>
+	</div>
+	<button  class="button button1">+</button>
+	<button  class="button button2">×</button>
+	<button  class="button button3">÷</button>
+	</div>
+	<ul class="reult"></ul>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body{
+color:black;
+}
+.container{width:270px;
+	background-color:red;	
+	height:300px;
+	position: relative;
+	left:300px;
+	top:200px;
+	z-index: 3;
+}
+.d1{
+	background-color: blue;
+	height:130px;
+	width:100px;
+	float:left;
+
+}
+.d2{
+	background-color: green;
+	height:100px;
+	width:100px;
+	float:left;
+}
+.d3{
+	background-color: yellow;
+	height:100px;
+	width:100px;
+	float:left;
+}
+.d3_1{
+	background-color: #3366cc;
+	height:50px;
+	width:90px;
+	float:left;
+}
+.d4{
+	background-color: gray;
+	height:100px;
+	width:400px;
+	position:fixed;
+	left:300px;
+	top:200px;
+	z-index: 2;
+}
+.img1{
+	
+	position: absolute;
+    clip:rect(0px,200px,200px,0px);
+}
+p{
+	z-index: 4;
+}
+.img{
+	border:3px solid #c45;
+}

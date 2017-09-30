@@ -1,0 +1,43 @@
+*{margin:0px; padding:0px;}
+a{text-decoration: none;}
+li{list-style: none;}
+body{}
+
+.top-bar{width:100%; background:#333; height: 40px; font-size: 12px; line-height: 40px;}
+.container{width: 1226px; margin:0px auto; position: relative;}
+.top-bar a {color:#b0b0b0;}
+.top-bar a:hover{color:#fff;}
+.top-nav{float: left; height: 40px;}
+.top-manager{float:left; position: absolute; right:0px;}
+
+.part-one{height: 64px; line-height: 64px; padding:20px 0px;}
+.part-one img{float: left; }
+.part-one li{float:left; margin:0px 10px; cursor: pointer; font-size: 16px;}
+.part-one li:hover{color:#ff6700;}
+
+.part-two{width: 100%; height: 460px; margin-bottom: 30px; clear: both; position:relative;}
+.layer{width: 235px; background-color:rgba(0, 0, 0, 0.7); height:460px; position: absolute; top:0px; left:0px; text-indent: 3em;};
+.layer.left{position:absolute; top:0; left:0; width:235px; height:400px; padding:30px 0; z-index:3;}
+.left li {width:200px; height:40px; padding-left:34px; line-height:40px; color:#fff; cursor:pointer;}
+.left li:hover{background-color:#ff6700;}
+
+.controller .turnPage{position:absolute; top:50%; transform:translateY(-50%); -webkit-transform:translateY(-50%); background:rgba(0, 0, 0, .1); width:42px; height:70px;}
+.turnPage:hover{background:rgba(0, 0, 0, .7);}
+.controller .turnPage i{width:16px; height:30px; margin:20px auto; display:block;}
+.controller .prev{left:235px;}
+.controller .prev i{background:url(img/button_l.png);}
+.controller .next{right:0;}
+.controller .next i{background:url(img/button_r.png);}
+.controller .dots{position:absolute; bottom:10px; right:50px;}
+.controller .dots li{width:6px; height:6px; margin:0 4px; border: 2px solid #fff; border-color: rgba(255,255,255,0.3); border-radius:50%; background:rgba(0, 0, 0, .4); display:block; float:left;}
+.controller .dots li.on, .controller .dots li:hover{background:rgba(255, 255, 255, .4); border-color:rgba(0, 0, 0, .4);}
+
+.part-three{position: relative; clear:both; width: 100%;}
+.part-three h3 {font-size: 22px; font-weight: 200; line-height: 58px; color:#333;}
+.control{position: absolute; top:24px; right: 0px; width: 70px; height: 25px;}
+.control .turnPage{width: 24px; height: 16px; padding:3px 5px; border:1px solid #e0e0e0; cursor: pointer;}
+.part-three .mistar{width: 100%; height: 340px; position: relative; overflow: hidden;}
+.part-three .list{position: absolute; left: 0px; top:0px; height: 340px;}
+.part-three .list li {width:234px; height:300px; float:left; margin-right: 6px; margin-top: 56px; background:#fafafa;}
+.part-three .list li h4{text-align: center;}
+.part-three .list li p{text-align: center; font-size:12px; color:#b0b0b0;}

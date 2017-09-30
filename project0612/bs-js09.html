@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js09</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+	<button type="button" id="mybtn"class="btn btn-primary" data-loading-text="loading for 3 seconds">Loading
+	</button>
+	<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+	  Single toggle
+	</button>
+</div>
+
+<script src="jquery/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>	
+<script>
+$("#mybtn").on("click",function(){
+	var btn=$(this).button("loading");
+	setTimeout(function(){
+		btn.button("reset")
+	},3000)
+})
+
+</script>
+</body>
+</html>

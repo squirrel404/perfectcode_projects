@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>样式</title>
+	<style type="text/css">
+		/* .box{width:50px;height:50px;background-color: red;} */
+	</style>
+</head>
+<body>
+	<!-- 行内样式 -->
+	<div class="box" id="box" style="width:50px;height:50px;background-color: red;">
+	</div>
+	<button id="bigger">放大</button>
+	<button id="smaller">缩小</button>
+	<script type="text/javascript">
+	var box=document.getElementById("box");
+	//var boxwidth=box.style.width;
+	//通过此方法只能获取行内样式，不能获取到外联样式；
+
+	//var boxwidth = box.currentStyle["width"];
+	var boxwidth = getComputedStyle(box,false)["width"];
+
+   		/*function getstyle(){
+   			if(dom.currentStyle[name];){
+   				return dom.currentStyle[name];
+   			}
+   			else{
+   				return getComputedStyle(dom,false)[name];
+   			}
+   		}
+*/
+	console.log(boxwidth);
+
+	var bigger=document.getElementById("gigger");
+	var smaller=document.getElementById("smaller");
+	var bigger=document.getElementById("gigger");
+	var smaller=document.getElementById("smaller");
+
+	bigger.onclick=function(bigger){
+		box.style.width="100px";
+		box.style.height="100px";
+	}
+	smaller.onclick=function(smaller){
+		box.style.width="20px";
+		box.style.height="20px";
+	}
+	</script>
+</body>
+</html>

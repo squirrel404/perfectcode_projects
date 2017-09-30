@@ -1,0 +1,51 @@
+*{margin: 0px; padding: 0px}
+li{list-style: none;font-size: 12px;}
+a{text-decoration: none;color: #fff;}
+.header{width: 100%;height: 40px;background-color: #333;}
+.header .header_container{position: relative;margin: 0px auto;width: 1226px;}
+.header_container .top_nav_l {float: left;}
+.header_container  li{float: left;}
+.header_container  a{color: #b0b0b0;font-size: 12px;display: block;line-height: 40px; margin:0px 8px;cursor: pointer;}
+.header_container li:hover a{color: #fff;}
+.header_container .top_nav_r {float: right;}
+.container{width:100%; position: relative;}
+.containerin{width:1226px; margin: 0px auto;position: relative;}
+.container .nav{line-height: 64px;height:64px;width: 1226px;padding: 20px 0px}
+.container .nav a {float: left;}
+.container .nav ul li{float: left;}
+.container .nav ul li a{color: #000;font-size: 16px;line-height: 64px; margin:0px 10px;cursor: pointer;}
+.container .nav ul li:hover a{color: #ff6700;}
+.contentfirst img{width: 150px;height: 150px;margin: 10px 20px;display:inline;}
+/*多余带码*/
+.contentfirst #h{display: inline-block;position: absolute;left: 30px;bottom: 20px;display:inline;}
+.contentfirst #hh{display: inline-block;position: absolute;left: 215px;bottom: 20px;display:inline;}
+.contentfirst #hhh{display: inline-block;position: absolute;left: 420px;bottom: 20px;display:inline;}
+
+.contentfirst{width: 100%;height: 200px;display: none;position: absolute;top:104px;left: 0px;}/*.container .nav_content这个不能写，不然会覆盖不了*/
+.container .banner{height: 460px;position: relative;}
+.container .banner .left{width: 234px;position: absolute;top:0px;left:0px;z-index:2;background-color: #000;opacity: 0.7;z-index: 1;}
+.container .banner .left ul{padding: 30px 0px;}
+.container .banner .left ul li{line-height: 40px;height: 40px;padding-left:34px;width: 200px; }
+.container .banner .left ul li a{font-size: 14px;display: block;line-height: 40px;cursor: pointer;}
+.container .banner .left ul li:hover {background-color:#dd7057;}
+.container .banner .left i{font-size: 20px;display: inline-block;font-style: normal;color: #fff;padding-right:20px;float: right; }
+.contentsecond{width: 200px;height: 460px;background-color: green;display: none;position: absolute;top:0px;left: 234px;}
+.content{display: block;border: 1px solid #fff;background-color: #fff;z-index: 2;}/*放在后面才可以*/
+.container .banner .right{height: 460px;width: 1226px;overflow: hidden;position: relative;}
+.container .banner .right .right_img{width: 8000px;position: absolute;top:0px;left:0px;}
+.container .banner .right .right_img li{float: left; }
+.right .num{position: absolute;right: 80px;bottom: 30px;}
+.right .num li{background-color: #a09c98;width: 10px;height: 10px;border-radius: 50%;float: left;margin: 0px 5px;}
+.right .num li.on{background-color: #fff}
+.btn{width: 42px;height: 30px;position: absolute;text-align: center;background-color: #9d9a99;padding: 20px 0px;opacity:0.2}
+.btn_l{left:234px;top: 230px;margin-top: -35px;}
+.btn_r{right:0px;top: 230px;margin-top: -35px;}
+.btn:hover{opacity: 1;}
+.star{position: relative;overflow: hidden;width: 1226px;background:#fff;height: 398px;}
+.star h3{line-height: 58px;height: 58px; margin-top:26px;}
+.star .list{width: 3500px;height: 340px;position: absolute;left: 0px;top:74px;}
+.star .list li{float: left;width: 234px;height: 340px;margin-right: 14px;}
+.list li img{width: 160px;height: 160px;padding-top: 40px;margin: 0px 37px;display: block;}
+.list li h4{width:100%; text-align:center;margin-bottom: 10px;margin: 20px 0px;}
+.list li p{width:100%; text-align:center; font-size:12px; color:#b0b0b0;margin-bottom: 20px;}
+.list li b{width:100%; text-align:center; color:#ff6700; display:block; }

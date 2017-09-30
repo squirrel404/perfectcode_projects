@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index11</title>
+	<link rel="stylesheet" type="text/css" href="css/container.css">
+	<style type="text/css">
+		.box1{
+					color: #734161;
+		    		background-color: #eee;
+					width:600px;
+					margin:100px auto;
+					}
+		img{
+			float:right;
+		}
+		.clearfix {
+					  overflow: auto;
+					  color: #734161;
+		    		background-color: #eee;
+					width:600px;
+					margin:100px auto;
+					}
+	</style>
+</head>
+<body>
+	<div class="container box1">
+		<span class="container-top" >&ltdiv&gt</span>
+			<p>不......这个图片比包含它的元素还高， 而且它是浮动的，于是它就溢出到了容器外面</p>
+			<img src="images/ilta.png" alt="ilta">
+		<span class="container-bottom">&lt/div&gt</span>
+	</div>
+	<div class="container clearfix">
+		<span class="container-top" >&ltdiv class="clearfix"&gt</span>
+			<p>好多了！</p>
+			<img src="images/ilta.png" alt="ilta">
+		<span class="container-bottom">&lt/div&gt</span>
+	</div>
+</body>
+</html>

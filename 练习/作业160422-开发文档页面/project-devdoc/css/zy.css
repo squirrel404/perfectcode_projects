@@ -1,0 +1,138 @@
+	body{
+		
+		font-family: "黑体";
+		}
+	.leftlogo img{
+		max-width:80%;height:auto;
+		}
+	a{
+		text-decoration: none;
+		color:#ffffff;
+		font-family:"黑体";
+
+		}
+
+	.container{
+		background-color: #fff;
+		width:1260px;
+		height:auto;
+		margin:0 auto;
+		}
+	.header{
+		background-color:#15a07b;
+		height:150px;
+		padding:20px 50px;
+		}
+
+	.leftlogo{
+		width:100px;
+		height:auto;
+		float:left;
+		}
+	.nav{
+		float:right;
+		}
+
+
+	.td1{
+		width:80px;
+		}
+	.li1,.button1,.button2{
+		font-size:14px;
+		list-style:none;
+		float: left;
+	    -webkit-margin-start: 40px;
+	    -webkit-margin-before: 8px;
+	    -webkit-margin-after: 8px;
+		}
+	.button1,.button2{
+		-webkit-margin-before: 0px;
+		padding:8px 12px;
+		background-color: #ffbe4e;
+		border-radius: 4px;
+		}
+	.button2{
+		background-color: #117e61;
+		}
+	.text1{
+		margin-bottom: 0;margin-left: 
+		width:150px;
+
+	    color: #fff;
+	    font-size: 48px;
+	    font-weight: 400;
+	    line-height: normal;
+	    margin-top: 68px;
+
+		}
+
+	.search {
+	    position: absolute;
+	    width: 350px;
+	    height: 37px;
+	    border-radius: 3px;
+	    background: #fff;
+	    right: 100px;
+	    top: 120px;
+		}
+	.banner-search{
+		border:0;
+		height:30px;
+		width:310px;margin-left: 10px;
+		}
+	.img_search {
+	    position: absolute;
+	    z-index: 3;
+	    cursor: pointer;
+	    right: 12px;
+	    top: 12px;
+		}
+	.content{
+		width:944px;
+		margin:90px auto;
+		background-color: #fff;
+		}
+	.td1{
+		width:200px;
+		height:250px;
+		border:1px solid #ccc;
+		padding:50px auto auto auto;
+		text-align:center;
+		
+		}
+	.content a{
+		color:#444;
+		}
+	.td2{
+		height:250px;
+		width:50px;
+		}
+
+	.footer a{
+		color:#888;
+		}
+	.footer li{
+		list-style: none;
+		float:left;
+		-webkit-margin-start: 1em;
+		-webkit-margin-before: 10px;
+		-webkit-margin-after: 10px;
+		}
+	.footer{
+		background-color: #e6e6ea;
+		height:146px;
+		width:100%;
+		margin-top:20px;
+		text-align:center;
+		}
+	.footer p{
+		clear:both;
+		color:#888;
+		position: relative;
+	    top: 70px;
+		}
+	.footer ul{
+		position: relative;
+	    left: 270px;
+	    top:60px;
+		}

@@ -1,0 +1,22 @@
+.container{
+		position: relative;
+		border:3px solid #6AC5AC;
+		width:100%;
+	    color: #414142;
+	    font-family: Arial;
+	    
+	}
+.container-top{
+	
+		background-color: #6AC5AC;
+		position: absolute;
+		top:0;
+		left:0;
+	}
+.container-bottom{
+	
+		background-color: #6AC5AC;
+		position: absolute;
+		bottom: 0;
+		right:0;
+	}

@@ -1,0 +1,31 @@
+h1,a,h2{
+		color:red;font-size:30px;
+}
+body{
+	color:green;
+}
+li strong{
+	color:yellow;
+}
+strong{
+	color:blue;
+}
+#pid{
+	color:blueviolet;
+
+}
+#divid p{
+	color:gray;
+}
+.pclass{
+	color:#789;
+}
+.divclass p{
+	color:#998;
+}
+[title]{
+	color:red;
+}
+[title=te]{
+	color:blue;
+}
